@@ -2,30 +2,52 @@ import React from 'react'
 
 export default function HeaderHome(props) {
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-            <a className="navbar-brand" href="#">Dat's Portfolio</a>
-            <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation" />
-            <div className="collapse navbar-collapse" id="collapsibleNavId">
-                <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Link</a>
-                    </li>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div className="dropdown-menu" aria-labelledby="dropdownId">
-                            <a className="dropdown-item" href="#">Action 1</a>
-                            <a className="dropdown-item" href="#">Action 2</a>
-                        </div>
-                    </li>
-                </ul>
-                <form className="form-inline my-2 my-lg-0">
-                    <input className="form-control mr-sm-2" type="text" placeholder="Search" />
-                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
+        <header className="header" id="header">
+            <nav className="nav container">
+                <a href="#" className="nav__logo">David</a>
+                <div className="nav__menu" id="nav-menu">
+                    <ul className="nav__list grid">
+                        <li className="nav__item">
+                            <a href="#home" className="nav__link">
+                                <i className="uil uil-estate"></i>Home
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#services" className="nav__link">
+                                <i className="uil uil-briefcase-alt"></i>Services
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#about" className="nav__link">
+                                <i className="uil uil-user"></i>About
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#skills" className="nav__link">
+                                <i className="uil uil-file-alt"></i>Skills
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#projects" className="nav__link">
+                                <i className="uil uil-scenery"></i>Projects
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#contact" className="nav__link">
+                                <i className="uil uil-message"></i>Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i className="uil uil-times nav__close" id="nav-close" />
+                </div>
+                <div className="nav__btns">
+                    {/* Theme change button */}
+                    <i className="uil uil-moon change-theme" id="theme-button" />
+                    <div className="nav__toggle" id="nav-toggle">
+                        <i className="uil uil-apps" />
+                    </div>
+                </div>
+            </nav>
+        </header>
     )
 }
