@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { BiHome, BiUser, BiBookBookmark, BiFile, BiImage, BiMessageRoundedDots, BiX, BiMenu } from 'react-icons/bi'
 
 export default function HeaderHome(props) {
     const [menu, setMenu] = useState(false);
@@ -15,42 +16,42 @@ export default function HeaderHome(props) {
                     <ul className="nav__list grid">
                         <li className="nav__item">
                             <a href="#home" className="nav__link">
-                                <i className="uil uil-estate nav__icon"></i>Home
+                                <BiHome className="nav__icon"/> Home
                             </a>
                         </li>
                         <li className="nav__item">
                             <a href="#about" className="nav__link">
-                                <i className="uil uil-user nav__icon"></i>About
+                                <BiUser className="nav__icon"/> About
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#services" className="nav__link">
-                                <i className="uil uil-briefcase-alt nav__icon"></i>Services
+                            <a href="#qualification" className="nav__link">
+                                <BiBookBookmark className="nav__icon"/> Qualification
                             </a>
                         </li>
                         <li className="nav__item">
                             <a href="#skills" className="nav__link">
-                                <i className="uil uil-file-alt nav__icon"></i>Skills
+                                <BiFile className="nav__icon"/> Skills
                             </a>
                         </li>
                         <li className="nav__item">
                             <a href="#projects" className="nav__link">
-                                <i className="uil uil-scenery nav__icon"></i>Projects
+                                <BiImage className="nav__icon"/> Projects
                             </a>
                         </li>
                         <li className="nav__item">
                             <a href="#contact" className="nav__link">
-                                <i className="uil uil-message nav__icon"></i>Contact
+                                <BiMessageRoundedDots className="nav__icon"/> Contact
                             </a>
                         </li>
                     </ul>
-                    <i className="uil uil-times nav__close" id="nav-close" onClick={()=>showMenu(false)}/>
+                    <BiX className="nav__close" id="nav-close" onClick={()=>showMenu(false)}/>
                 </div>
                 <div className="nav__btns">
                     {/* Theme change button */}
-                    <i className="uil uil-moon change-theme" id="theme-button" />
+                    {/* <i className="uil uil-moon change-theme" id="theme-button" /> */}
                     <div className="nav__toggle" id="nav-toggle">
-                        <i className="uil uil-apps" onClick={()=>showMenu(true)}/>
+                        <BiMenu size="16" onClick={()=>showMenu(true)}/>
                     </div>
                 </div>
             </nav>

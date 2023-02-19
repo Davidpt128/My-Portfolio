@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route } from 'react-router-dom';
-import FooterHome from '../components/FooterHome/FooterHome';
-import HeaderHome from '../components/HeaderHome/HeaderHome';
+import FooterHome from '../components/FooterHome';
+import HeaderHome from '../components/HeaderHome';
 
 export default function HomeTemlate(props) {
   return (
