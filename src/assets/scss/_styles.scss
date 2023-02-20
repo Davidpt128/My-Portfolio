@@ -1,3 +1,19 @@
-@import './themes/_light-theme.scss';
+@import './themes/_theme1.scss';
 @import './base/_base.scss';
+
+//Component
+@import './components/HeaderHome.scss';
+@import './components/FooterHome.scss';
+@import './components/AboutComponent.scss';
+@import './components/ContactComponent.scss';
+@import './components/HomeComponent.scss';
+@import './components/OfferComponent.scss';
+@import './components/ProjectsComponent.scss';
+@import './components/QualificationComponent.scss';
+@import './components/SkillsComponent.scss';
+@import './components/ScrollUpComponent.scss';
+
+//Page
 @import './pages/home-page';
+
+

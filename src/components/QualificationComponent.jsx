@@ -15,11 +15,11 @@ export default function QualificationComponent() {
             <span className="section__subtitle">My personal journey</span>
             <div className="qualification__container container">
                 <div className="qualification__tabs">
-                    <div className="qualification__button button--flex" onClick={()=>handleQualificationClick(0)}>
+                    <div className={activeQualification === 0 ? "qualification__button button--flex qualification__button-active" : "qualification__button button--flex"} onClick={()=>handleQualificationClick(0)}>
                         <SlGraduation className='qualification__icon' />
                         Education
                     </div>
-                    <div className="qualification__button button--flex" onClick={()=>handleQualificationClick(1)}>
+                    <div className={activeQualification === 1 ? "qualification__button button--flex qualification__button-active" : "qualification__button button--flex"} onClick={()=>handleQualificationClick(1)}>
                         <BiBriefcaseAlt2 className='qualification__icon' />
                         Work
                     </div>
