@@ -3,13 +3,13 @@ width: 100%;
 position: fixed;
 bottom: 0;
 left: 0;
-z-index: $z-fixed;
-background-color: $body-color;
+z-index: var(--z-fixed);
+background-color: var(--body-color);
 }
 
 .nav{
     max-width: 968px;
-    height: $header-height;
+    height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,13 +17,13 @@ background-color: $body-color;
 
 .nav__logo,
 .nav__toggle{
-    color: $title-color;
-    font-weight: $font-medium;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
 }
 
 .nav__logo:hover,
 .nav__toggle:hover{
-    // color: $first-color;
+    // color: var(--first-color;
     cursor: pointer;
 }
 
@@ -33,7 +33,7 @@ background-color: $body-color;
         bottom: -100%;
         left: 0;
         width: 100%;
-        background-color: $body-color;
+        background-color: var(--body-color);
         padding: 3rem 1.5rem 2.5rem;
         box-shadow: 0 -1px 4px rgba(0,0,0,.15);
         border-radius: 1.5rem 1.5rem;
@@ -45,7 +45,7 @@ background-color: $body-color;
         top: .5rem;
         font-size: 1.5rem;
         cursor: pointer;
-        color: $first-color;
+        color: var(--first-color);
     }
 }
 
@@ -58,13 +58,13 @@ background-color: $body-color;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: $small-font-size;
-    color: $title-color;
-    font-weight: $font-medium;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
 }
 
 .nav__link:hover{
-    color: $first-color;
+    color: var(--first-color-lighter);
 }
 
 .nav__icon{
@@ -72,7 +72,7 @@ background-color: $body-color;
 }
 
 .nav__close:hover{
-    color: $first-color-alt;
+    color: var(--first-color-alt);
 }
 
 .nav__btns{
@@ -83,13 +83,13 @@ background-color: $body-color;
 /* Button Dark/Light */
 .change-theme{
     font-size: 1.25rem;
-    color: $title-color;
-    margin-right: $mb-1;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
     cursor: pointer;
 }
 
 .change-theme:hover{
-    color: $first-color;
+    color: var(--first-color);
 }
 
 /* show menu */
@@ -98,11 +98,13 @@ background-color: $body-color;
 }
 
 /* Active link */
-
+.active-link{
+    color: var(--first-color);
+}
 
 /* Change background header */
 .scroll-header{
-    box-shadow: 0 -1px 4px $box-shadow-color;
+    box-shadow: 0 -1px 4px var(--box-shadow-color);
 }
 
 @media screen and (min-width: 768px){
@@ -110,10 +112,10 @@ background-color: $body-color;
         top: 0;
         bottom: initial;
         padding: 0 1rem;
-        box-shadow: 0 -1px 4px $box-shadow-color;
+        box-shadow: 0 -1px 4px var(--box-shadow-color);
     }
     .nav{
-        height: $header-height + 1.5rem;
+        height: var(--header-height + 1.5rem);
         column-gap: 1rem;
     }
     .nav__icon,

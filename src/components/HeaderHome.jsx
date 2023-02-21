@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { BiHome, BiUser, BiBookBookmark, BiFile, BiImage, BiMessageRoundedDots, BiX, BiMenu, BiMoon, BiSun } from 'react-icons/bi'
 
 export default function HeaderHome(props) {
+    //show menu
     const [menu, setMenu] = useState(false);
-
     const showMenu = (isShow) => {
         setMenu(isShow);
     }
-
+    
     //change background header
     function scrollHeader() {
         const nav = document.getElementById('header')
@@ -24,10 +24,35 @@ export default function HeaderHome(props) {
     const [lightTheme, setLightTheme] = useState(false);
     const body = document.querySelector("body");
     const handleThemeChange = () => {
-        setLightTheme(!lightTheme);
-        body.classList.toggle('light-theme');
+        if(!lightTheme){
+            body.classList.add('light-theme');
+            setLightTheme(!lightTheme);
+        }
+        else{
+            body.classList.remove('light-theme');
+            setLightTheme(!lightTheme);
+        }
     }
 
+    //active nav in menu
+    const sections = document.querySelectorAll('section[id]')
+    function scrollActive(){
+    const scrollY = window.pageYOffset
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50
+        let sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }
+        else{
+        document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+    }
+    window.addEventListener('scroll', scrollActive)
+    
     return (
         <header className="header" id="header">
             <nav className="nav container">
@@ -35,7 +60,7 @@ export default function HeaderHome(props) {
                 <div className={menu ? "nav__menu show-menu" : "nav__menu"} id="nav-menu">
                     <ul className="nav__list grid">
                         <li className="nav__item">
-                            <a href="#home" className="nav__link">
+                            <a href="#home" className="nav__link active-link">
                                 <BiHome className="nav__icon" /> Home
                             </a>
                         </li>

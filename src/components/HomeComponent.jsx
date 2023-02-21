@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { BiCommentDetail, BiDownArrowAlt, BiMouse } from 'react-icons/bi'
+import { BiCommentDetail } from 'react-icons/bi'
 
 export default function HomeComponent() {
     return (
@@ -41,13 +41,6 @@ export default function HomeComponent() {
                             Contact Me <BiCommentDetail className="button__icon" />
                         </a>
                     </div>
-                </div>
-                <div className="home__scroll">
-                    <a href="#about" className="home__scroll-button button--flex">
-                        <BiMouse className='home__scroll-mouse'/>
-                        <span className="home__scroll-name">Scroll down</span>
-                        <BiDownArrowAlt className='home__scroll-arrow'/>
-                    </a>
                 </div>
             </div>
         </section>

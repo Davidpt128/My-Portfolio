@@ -3,17 +3,17 @@
 }
 
 .offer__bg{
-    background-color: $first-color-second;
+    background-color: var(--first-color-second);
     padding-top: 3rem;
 }
 
 .offer__title{
-    font-size: $h2-font-size;
-    margin-bottom: $mb-0-75;
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
 }
 
 .offer__description{
-    margin-bottom: $mb-1-5;
+    margin-bottom: var(--mb-1-5);
 }
 
 .offer__title,
@@ -46,7 +46,7 @@
         background: none;
     }
     .offer__container{
-        background-color: $first-color-second;
+        background-color: var(--first-color-second);
         border-radius: 1rem;
         padding: 3rem 2.5rem 0;
         grid-template-columns: 1fr max-content;

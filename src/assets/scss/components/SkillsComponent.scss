@@ -5,27 +5,35 @@
 .skills__header{
     display: flex;
     align-items: center;
-    margin-bottom: $mb-2-5;
+    margin-bottom: var(--mb-2-5);
     cursor: pointer;
 }
 
 .skills__icon,
 .skill__arrow{
     font-size: 1.5rem;
-    color: $first-color;
+    color: var(--first-color);
 }
 
 .skills__icon{
-    margin-right: $mb-0-75;
+    margin-right: var(--mb-0-75);
 }
 
 .skills__title{
-    font-size: $h3-font-size;
+    font-size: var(--h3-font-size);
+}
+
+.skills__title:hover{
+    color: var(--first-color-lighter);
+}
+
+.skills__open .skills__title{
+    color: var(--first-color-lighter);
 }
 
 .skills__subtitle{
-    font-size: $small-font-size;
-    color: $text-color-light;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
 }
 
 .skills__arrow{
@@ -41,12 +49,12 @@
 .skills__titles{
     display: flex;
     justify-content: space-between;
-    margin-bottom: $mb-0-5;
+    margin-bottom: var(--mb-0-5);
 }
 
 .skills__name{
-    font-size: $normal-font-size;
-    font-weight: $font-medium;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
 }
 
 .skills__close .skills__list{
@@ -56,7 +64,7 @@
 
 .skills__open .skills__list{
     height: max-content;
-    margin-bottom: $mb-2-5;
+    margin-bottom: var(--mb-2-5);
 }
 
 .skills__open .skills__arrow{
@@ -65,7 +73,7 @@
 
 @media screen and (max-width: 350px) {
     .skills__title{
-        font-size: $normal-font-size;
+        font-size: var(--normal-font-size);
     }
 }
 

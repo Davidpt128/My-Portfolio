@@ -13,12 +13,12 @@
 }
 
 .projects__title{
-    font-size: $h3-font-size;
-    margin-bottom: $mb-0-5;
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
 }
 
 .projects__description{
-    margin-bottom: $mb-0-75;
+    margin-bottom: var(--mb-0-75);
 }
 
 .projects__button:hover .button__icon{
@@ -32,7 +32,7 @@
 
 .swiper-projects-icon{
     font-size: 2rem;
-    color: $first-color;
+    color: var(--first-color);
 }
 
 .swiper-button-prev{
@@ -48,7 +48,7 @@
 }
 
 .swiper-pagination-bullet-active{
-    background-color: $first-color;
+    background-color: var(--first-color);
 }
 
 .swiper-button-prev,
