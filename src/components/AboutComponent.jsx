@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiDownload } from 'react-icons/fi';
-import ImgAbout from '../assets/img/img.jpeg';
+import ImgAbout from '../assets/img/img3.jpg';
 // import Cv from '../assets/pdf/CV_PhamThanhDat.pdf'
 
 export default function AboutComponent() {
@@ -14,11 +14,11 @@ export default function AboutComponent() {
                     <p className="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veniam quis nisi eos distinctio reiciendis fuga placeat omnis illum? Temporibus fuga facilis sint. Animi?</p>
                     <div className="about__info">
                         <div>
-                            <span className="about__info-title">06+</span>
-                            <span className="about__info-name">Months <br /> experience</span>
+                            <span className="about__info-title">01</span>
+                            <span className="about__info-name">Year <br /> experience</span>
                         </div>
                         <div>
-                            <span className="about__info-title">07+</span>
+                            <span className="about__info-title">05+</span>
                             <span className="about__info-name">Completed <br /> projects</span>
                         </div>
                         <div>

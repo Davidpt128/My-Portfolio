@@ -5,6 +5,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Mousewheel, Keyboard } from "swiper";
 import { FiArrowRight, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import Img1 from '../assets/img/img.jpeg'
+import Img2 from '../assets/img/img2.jpg'
+import Img3 from '../assets/img/img3.jpg'
+
 
 export default function ProjectsComponent() {
   return (
@@ -30,9 +34,9 @@ export default function ProjectsComponent() {
           className="mySwiper"
         >
           <SwiperSlide className="projects__content grid">
-            <img src="https://ims.baoyenbai.com.vn/NewsImg/12_2022/256923_19-12-messi.jpg" alt="" className="projects__img" />
+            <img src={Img3} alt="" className="projects__img" />
             <div className="projects__data">
-              <h3 className="projects__title">Learning Website 1</h3>
+              <h3 className="projects__title">Website 1</h3>
               <p className="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, blanditiis!</p>
               <a href="#" className="projects__button button button--flex button--small">
                 Demo
@@ -41,10 +45,9 @@ export default function ProjectsComponent() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="projects__content grid">
-
-            <img src="https://ims.baoyenbai.com.vn/NewsImg/12_2022/256923_19-12-messi.jpg" alt="" className="projects__img" />
+            <img src={Img3} alt="" className="projects__img" />
             <div className="projects__data">
-              <h3 className="projects__title">Learning Website 2</h3>
+              <h3 className="projects__title">Website 2</h3>
               <p className="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, blanditiis!</p>
               <a href="#" className="projects__button button button--flex button--small">
                 Demo
@@ -53,9 +56,9 @@ export default function ProjectsComponent() {
             </div>
           </SwiperSlide>
           <SwiperSlide className="projects__content grid">
-            <img src="https://ims.baoyenbai.com.vn/NewsImg/12_2022/256923_19-12-messi.jpg" alt="" className="projects__img" />
+            <img src={Img3} alt="" className="projects__img" />
             <div className="projects__data">
-              <h3 className="projects__title">Learning Website 3</h3>
+              <h3 className="projects__title">Website 3</h3>
               <p className="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, blanditiis!</p>
               <a href="#" className="projects__button button button--flex button--small">
                 Demo
