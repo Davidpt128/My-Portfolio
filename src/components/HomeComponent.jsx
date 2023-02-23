@@ -34,7 +34,7 @@ export default function HomeComponent() {
                         </svg>
                     </div>
                     <div className="home__data">
-                        <h1 className="home__title">Hi, I'm David</h1>
+                        <h1 className="home__title">Hi, I'm Dat</h1>
                         <img src="" alt="" />
                         <h3 className="home__subtitle">Software Developer</h3>
                         <p className="home__description">As someone with a passion for programming, I have a basic understanding of programming and desire to learn more to become a better software developer.</p>
