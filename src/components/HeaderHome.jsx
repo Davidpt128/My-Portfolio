@@ -56,7 +56,9 @@ export default function HeaderHome(props) {
     return (
         <header className="header" id="header">
             <nav className="nav container">
-                <a href="#" className="nav__logo">David</a>
+                <a href="#" className="nav__logo">
+                    Dat's Portfolio
+                </a>
                 <div className={menu ? "nav__menu show-menu" : "nav__menu"} id="nav-menu">
                     <ul className="nav__list grid">
                         <li className="nav__item">

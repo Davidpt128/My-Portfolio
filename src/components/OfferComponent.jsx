@@ -1,5 +1,6 @@
 import React from 'react'
-import { BiCommentDetail } from 'react-icons/bi'
+import { BiCommentDetail } from 'react-icons/bi';
+import ImgOffer from '../assets/img/imgNoBackground.png'
 
 export default function OfferComponent() {
   return (
@@ -14,7 +15,7 @@ export default function OfferComponent() {
                     <BiCommentDetail className="offer__icon button__icon" />
                 </a>
             </div>
-            <img src="https://ims.baoyenbai.com.vn/NewsImg/12_2022/256923_19-12-messi.jpg" alt="" className="offer__img" />
+            <img src={ImgOffer} alt="" className="offer__img" />
         </div>
       </div>
     </section>

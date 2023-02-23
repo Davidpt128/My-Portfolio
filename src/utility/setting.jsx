@@ -1,9 +1,9 @@
 import axios from "axios";
 
-export const DOMAIN = "elearningnew.cybersoft.edu.vn/swagger/index.html";
+export const DOMAIN = "...";
 
-export const TOKEN_CYBERSOFT =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCAyMyIsIkhldEhhblN0cmluZyI6IjIwLzEwLzIwMjIiLCJIZXRIYW5UaW1lIjoiMTY2NjIyNDAwMDAwMCIsIm5iZiI6MTYzODExODgwMCwiZXhwIjoxNjY2MzcxNjAwfQ.hoaq9WsA187Q0NvdBYPZsn8c2CRg_ZE4mQO5_lUyAL4";
+export const TOKEN =
+  "...";
 
 export const USER_LOGIN = "userLogin";
 export const ACCESSTOKEN = "accessToken";
@@ -17,7 +17,7 @@ http.interceptors.request.use(
   (config) => {
     config.headers = {
       ...config.headers,
-      ["TokenCybersoft"]: TOKEN_CYBERSOFT,
+      ["TokenCybersoft"]: TOKEN,
       ["Authorization"]: "Bearer " + JSON.parse(localStorage.getItem(ACCESSTOKEN)),
     };
     return config;
