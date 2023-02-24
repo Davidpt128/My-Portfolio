@@ -64,7 +64,7 @@ export default function QualificationComponent() {
                                 <span className="qualification__subtitle">Cybersoft Academy</span>
                                 <div className="qualification__calendar">
                                     <BiCalendar />
-                                    09/2021-04/2022
+                                    10/2021-04/2022
                                 </div>
                             </div>
                             <div>
@@ -100,7 +100,7 @@ export default function QualificationComponent() {
                                 <span className="qualification__subtitle">I3 Australia Technology Solutions</span>
                                 <div className="qualification__calendar">
                                     <BiCalendar />
-                                    08/2022-01/2023
+                                    09/2022-02/2023
                                 </div>
                             </div>
                         </div>
